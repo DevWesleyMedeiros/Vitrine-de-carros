@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Palavras, separadas, por, virgula"> 
+    <meta name="description" content="Conteúdo do meu site">
+    <meta name="author" content="Wesley Medeiros da Rosa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="stylesheet" href="style.css/media_query.css">
+    <link rel="shortcut icon" href="assets_arquivos/meu_favicon.ico" type="image/x-icon">
+    <title>Vitrine de carros</title>
+</head>
+<body>
+    <header>
+        <div class="car_logo"></div>
+        <div class="icone_menu_mobile" id="menu_mobile">
+            <!--imagem do ícone aqui-->
+        </div>
+        <div class="close_menu" id="close_menu_mobile">
+            <!--imagem do icone fechar-->
+        </div>
+        <nav>
+            <ul id="lista_links">
+                <li><a href="#">Contato</a></li>
+                <li><a href="pagina_sobre/index.html" rel="next" target="_self">Sobre</a></li>
+                <li><a href="pagina_venda/index.html" rel="next" target="_self">Venda</a></li>
+                <li><a href="#" id="first_link">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sessao1_banner">
+    <div class="container_opcoes_empresa">
+            <div class="consultoria">Consultoria</div>
+            <div class="compra">Compra</div>
+            <div class="venda">venda</div>
+            <div class="email">Email@outlook.com</div>
+        </div>
+    </section>
+    <section class="sessao2_veiculos_destaque">
+        <div class="destaques">
+            <h2>DESTAQUES</h2>
+        </div>
+        <div class="galeria_carros">
+            <div class="container_informacoes_carro">
+                <div class="foto_carro">
+                    <!--foto do carro aqui-->
+                </div>
+                <div class="informacoes_carro">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <button>DETALHES</button>
+                </div>
+            </div>
+            <div class="container_informacoes_carro">
+                <div class="foto_carro">
+                    <!--foto do carro aqui-->
+                </div>
+                <div class="informacoes_carro">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <button>DETALHES</button>
+                </div>
+            </div>
+            <div class="container_informacoes_carro">
+                <div class="foto_carro">
+                    <!--foto do carro aqui-->
+                </div>
+                <div class="informacoes_carro">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <button>DETALHES</button>
+                </div>
+            </div><!--container_informações_carro-->
+        </div><!--galeria de carros-->
+    </section>
+    <section class="sessao3_depoimentos_servicos">
+        <div class="container_depoimentos_servicos">
+            <div class="servicos">
+                <h2>SERVIÇOS</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Vendas</li>
+                    <li>Consultoria de veículos</li>
+                    <li>Indicação de mecânicos e peças</li>
+                </ul>
+                <duv class="button_saiba_mais">
+                    <button>SAIBA MAIS</button>
+                </duv>
+            </div>
+            <div class="depoimentos">
+                <h2>DEPOIMENTOS</h2>
+                <div class="depoimento_cliente">
+                    <blockquote>
+                        "O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”
+                    </blockquote>
+                </div>
+                <div class="setas">
+                    <div style="padding-left: 70px;">
+                        <img src="assets_arquivos/arrow-left.png" alt="seta esquerda" class="seta_esquerda">
+                        <img src="assets_arquivos/arrow-right.png" alt="seta direita" class="seta_direita">
+                    </div>
+                    <div class="nome_pessoa_depoimento">
+                        <p>João da Silva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sessao4_contato">
+        <div class="container_contato">
+            <div class="contato"></div>
+            <div class="contato" id="contato_titulo">
+                <h2>
+                    CONTATO
+                </h2>
+            </div>
+            <div class="contato"></div>
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" name="nome" required placeholder="Seu nome completo*">
+                <div class="email_telefone">
+                    <input type="email" name="email" required placeholder="Seu principal email*" minlength="8" max="100">
+                    <input type="tel" name="telefone" placeholder="Seu telefone">
+                </div>
+                <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                <div class="button">
+                    <input type="submit" name="botao_enviar" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <menu>
+                <ul>
+                    <li><a href="" id="home">Home</a></li>
+                    <li><a href="pagina_venda/index.html">Venda</a></li>
+                    <li><a href="pagina_sobre/index.html" rel="next" target="_self">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </menu>
+            <div class="direitos_autorais">
+                <h2>Todos os direito reservados</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="main_script/script.js"></script>
+</body>
+</html>

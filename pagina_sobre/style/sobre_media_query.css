@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px){
+    header .car_logo{
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    div.container_conteudo_sobre{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2%;
+    }
+    div#blank_container{
+        display: block;
+        width: 100%;
+        padding: 0.5% 2%;
+    }
+    div#texto{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0.5% 2%;
+        margin: 0 2%;
+    }
+    div#container{
+        width: 100%;
+        display: block;
+    }
+    div.blank_container{
+        display: none;
+    }
+    div.text{
+        width: 100%;
+        display: block;
+    }
+    div.text p{
+        display: block;
+        width: 100%;
+    }
+    footer menu{
+        display: none;
+    }
+    footer div.direitos_autorais{
+        width: 100%;
+    }
+    footer div.direitos_autorais h2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 769px){
+    header{
+        border-bottom: none;
+        height: auto;
+    }
+    header nav{
+        max-width: 100%;
+        width: 100%;
+        float: none;
+    }
+    nav#desk_top ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #693838;
+    }
+    nav#desk_top ul li{
+        width: 100%;
+        float: none;
+        margin: 1rem auto;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    nav#desk_top ul li a{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    nav#desk_top ul{
+        display: none;
+    }
+    .icone_menu_mobile{
+        display: block;
+    }
+}

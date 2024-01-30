@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        border-bottom: none;
+    }
+    header .car_logo{
+        display: block;
+        width: 100%;
+        margin: 3% auto;
+        float: none;
+        border-bottom: 3px solid #EB2D2D;
+    }
+    header nav{
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        margin: 4% 2% 3% 0.2%;
+    }
+    header nav div.icone_menu{
+        display: block;
+        margin: 1rem auto 1rem auto;
+    }
+    header nav div.icone_close{
+        display: none;
+        margin: 0 auto 1rem auto;
+    }
+    header nav ul{
+        display: none;
+        width: 100%;
+        background-color: #693838;
+    }
+    header nav ul li{
+        width: 100%;
+        float: none;
+        margin: 2% 0;
+        padding: 2% 0;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    header nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    .container_side_bar_mosaico_carros{
+        flex-direction: column;
+    }
+    .container_side_bar_mosaico_carros > .content_side_bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 1.5rem;
+    }
+    .container_side_bar_mosaico_carros > .mosaico_carros{
+        width: 100%;
+        margin: 0 2%;
+    }
+    div.footer{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer menu{
+        display: none;
+    }
+    footer div.direitos_autorais{
+        width: 100%;
+    }
+    footer div.direitos_autorais h2{
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 568px) {
+    .container_side_bar_mosaico_carros > .mosaico_carros{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}

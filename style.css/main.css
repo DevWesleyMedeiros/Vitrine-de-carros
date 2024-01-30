@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: normal;
+    font-family: var(--font_personalizada);
+}
+:root{
+    --bordas: 2px solid black;
+    --cor_fundo1: red;
+    --cor_fundo2: blue;
+    --cor_fundo3: #a19c9c;
+    --font_personalizada:  font-family: 'Oswald', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+header div.icone_menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url("../assets_arquivos/icon_menu.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+}
+header div.close_menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background-image: url("../assets_arquivos/close_icon.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+header{
+    max-width: 1500px;
+    height: 26vh;
+    width: 100%;
+    padding: 5px 2% 25px 2%;
+}
+header .car_logo{
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 0.5rem 0 1.5rem 1.5rem;
+    background-image: url("../assets_arquivos/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+header nav{
+    max-width: 500px;
+    width: 100%;
+    float: right;
+}
+header nav ul{
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+}
+header nav ul li{
+    float: right;
+    margin: 5rem 2%;
+    padding: 0 20px;
+    font-style: italic;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font_personalizada);
+    padding: .2rem;
+    border-radius: 5px;
+    transition-delay: 0.5ms;
+    transition: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+header nav ul li a:hover{
+    background-color: #d5b8b8;
+}
+header nav ul li a#first_link{
+    color: #EB2D2D;
+}
+.sessao1_banner{
+    width: 100%;
+    min-height: 0;
+    height: 650px;
+    background-image: url("../assets_arquivos/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: relative;
+    background-color: #000;
+}
+.sessao1_banner .container_opcoes_empresa{
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+    position: absolute;
+    left: 0;
+}
+.sessao1_banner .container_opcoes_empresa .consultoria{
+    width: 314px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    margin-left: 60px;
+    margin-top: 30px;
+    line-height: 70px;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .compra{
+    width: 175px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    position: relative;
+    left: -55px;
+    margin-top: 30px;
+    line-height: 70px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .venda{
+    width: 175px;
+    height: 70px;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-text.png");
+    position: relative;
+    left: -67px;
+    line-height: 70px;
+    margin-top: 30px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.sessao1_banner .container_opcoes_empresa .email{
+    width: 350px;
+    color: black;
+    font-style: italic;
+    font-size: 25px;
+    font-family: var(--font_personalizada);
+    font-weight: 700;
+    text-align: start;
+    background-image: url("../assets_arquivos/box-white-text.png");
+    position: relative;
+    left: 5px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.sessao2_veiculos_destaque{
+    width: 100%;
+    padding: 0 2%;
+}
+.sessao2_veiculos_destaque .destaques{
+    display: block;
+    margin: 5rem auto 2rem auto;
+}
+.sessao2_veiculos_destaque .destaques h2{
+    font-style: italic;
+    text-align: center;
+    font-size: 27px;
+}
+.sessao2_veiculos_destaque .galeria_carros{
+    max-width: 1400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .informacoes_carro{
+    width: 100%;
+    padding-top: 5px;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
+    width: 100%;
+    min-height: 213px;
+    height: 100%;
+    background-image: url("../assets_arquivos/carro1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    transition: 0.8s;
+    transition-delay: 0.5ms;
+    transition-timing-function: ease-in-out;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro:hover{
+    transform: scale(1.1);
+    overflow-x: hidden;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro h2{
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro p{
+    padding-top: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro button{
+    width: 150px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    border-bottom: 5px solid #B21E1E;
+    color: white;
+    margin-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+    -webkit-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    transition: 1s;
+    transition-duration: 0.5s;
+    transition-delay: 0.5ms;
+    transition-timing-function: ease-in-out;
+}
+.sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro button:hover{
+    background-color: #f00b0b;
+    border-bottom: 5px solid #732525;
+}
+.sessao3_depoimentos_servicos{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos{
+    width: 100%;
+    height: 500px;
+    background-color: #242424;
+    position: relative;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 32%;
+    /* border: 2px solid white; */
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos ul{
+    list-style-type: none;
+    font-family: var(--font_personalizada);
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    transform: translate(0%, -100%);
+    /* border: 2px solid white; */
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li{
+    color: white;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos li::before{
+    content: "\26AA";
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos .button_saiba_mais
+{
+    position: fixed;
+    width: 120px;
+    height: 50px;
+    -webkit-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos button{
+    width: 100%;
+    height: 100%;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    transition: 1s;
+    transition-duration: 0.5s;
+    transition-delay: 0.5ms;
+    transition-timing-function: ease-in-out;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .servicos button:hover{
+    background-color: #f00b0b;
+    border-bottom: 5px solid #732525;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    background-color: #EB2D2D;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos h2{
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    text-align: start;
+    color: white;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .depoimento_cliente blockquote{
+    margin: 0 70px;
+    text-align: start;
+    font-size: 22px;
+    color: white;
+    font-family: var(--font_personalizada);
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+img.seta_esquerda, img.seta_direita{
+    transition: all 1s;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+img.seta_esquerda:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+img.seta_direita:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_esquerda, .seta_direita{
+    width: 25px;
+    height: 30px;
+    margin: 0 20px;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento{
+    margin-right: 10%;
+}
+.sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento p{
+    color: #252525;
+    font-size: 25px;
+}
+.sessao4_contato{
+    width: 100%;
+}
+.sessao4_contato .container_contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1%;
+    padding: 5rem 2%;
+}
+.sessao4_contato .container_contato .contato{
+    width: 100%;
+    height: 20px;
+    border-bottom: 5px solid black;
+}
+.sessao4_contato .container_contato #contato_titulo{
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    height: 55px;
+}
+.sessao4_contato .container_contato .contato h2{
+    text-align: center;
+    font-size: 27px;
+    padding: 2% 0;
+    font-style: italic;
+    font-weight: bold;
+}
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form form{
+    width: 50%;
+}
+.form form input[type=text]{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.form form div.email_telefone{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 15px;
+}
+.form form div.email_telefone input[type=email],
+input[type=tel]{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.form form textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    cursor: text;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+.form form div.button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.form form div.button input[type=submit]{
+    line-height: 40px;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    width: 150px;
+    cursor: pointer;
+    -webkit-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 13px -6px rgba(0,0,0,0.75);
+    transition: 1s;
+    transition-duration: 0.5s;
+    transition-delay: 0.5ms;
+    transition-timing-function: ease-in-out;
+}
+.form form div.button input[type=submit]:hover{
+    background-color: #f00b0b;
+    border-bottom: 5px solid #732525;
+}
+footer{
+    width: 100%;
+    margin-top: 5rem;
+    padding: 40px 2%;
+    background: #252525;
+}
+div.footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer menu{
+    width: 50%;
+    float: left;
+}
+footer menu ul{
+   list-style-position: inside;
+   list-style-type: square;
+}
+footer menu ul li{
+    padding: 1.5rem 0;
+    display: inline-block;
+    margin: 0 1rem;
+}
+footer menu ul li a#home{
+    color: #EB2D2D;
+}
+footer menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10%;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-delay: 0.5ms;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+footer menu ul li a:hover{
+    background-color: #181010;
+}
+footer div.direitos_autorais{
+    width: 50%;
+}
+footer div.direitos_autorais h2{
+    text-align: end;
+    color: white;
+    padding: 1.5rem 2%;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
