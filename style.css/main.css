@@ -113,68 +113,72 @@ header nav ul li a#first_link{
 }
 .sessao1_banner .container_opcoes_empresa .consultoria{
     width: 314px;
-    height: 70px;
+    height: 60px;
     color: white;
     font-style: italic;
     font-size: 25px;
     font-family: var(--font_personalizada);
     font-weight: 700;
-    text-align: start;
+    text-align: center;
     background-image: url("../assets_arquivos/box-text.png");
-    margin-left: 60px;
+    margin-left: 10rem;
     margin-top: 30px;
     line-height: 70px;
-    padding-left: 50px;
+    transform: skew(-15deg);
     text-transform: uppercase;
 }
 .sessao1_banner .container_opcoes_empresa .compra{
-    width: 175px;
-    height: 70px;
+    width: 314px;
+    height: 60px;
     color: white;
     font-style: italic;
     font-size: 25px;
     font-family: var(--font_personalizada);
     font-weight: 700;
-    text-align: start;
+    text-align: center;
     background-image: url("../assets_arquivos/box-text.png");
     position: relative;
     left: -55px;
     margin-top: 30px;
-    line-height: 70px;
-    padding-left: 30px;
+    margin-left: 12rem;
+    line-height: 60px;
+    transform: skew(-20deg);
     text-transform: uppercase;
 }
 .sessao1_banner .container_opcoes_empresa .venda{
-    width: 175px;
-    height: 70px;
+    width: 314px;
+    height: 60px;
     color: white;
     font-style: italic;
     font-size: 25px;
     font-family: var(--font_personalizada);
     font-weight: 700;
-    text-align: start;
+    text-align: center;
     background-image: url("../assets_arquivos/box-text.png");
     position: relative;
     left: -67px;
-    line-height: 70px;
+    line-height: 60px;
     margin-top: 30px;
-    padding-left: 30px;
+    margin-left: 9rem;
+    transform: skew(-20deg);
     text-transform: uppercase;
 }
 .sessao1_banner .container_opcoes_empresa .email{
-    width: 350px;
+    width: 314px;
+    height: 60px;
     color: black;
     font-style: italic;
     font-size: 25px;
     font-family: var(--font_personalizada);
     font-weight: 700;
-    text-align: start;
+    text-align: center;
+    line-height: 10px;
     background-image: url("../assets_arquivos/box-white-text.png");
     position: relative;
-    left: 5px;
+    left: -25px;
     margin-top: 30px;
-    padding-left: 30px;
     padding-top: 30px;
+    transform: skew(-20deg);
     text-transform: uppercase;
 }
 .sessao2_veiculos_destaque{

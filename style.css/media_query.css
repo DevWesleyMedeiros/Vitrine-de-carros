@@ -1,148 +1,190 @@
-@media screen and (max-width: 1200px){
-    .button_saiba_mais{
-        display: block;
-        width: 100%;
-    }
+@media screen and (max-width: 1200px) {
+  .button_saiba_mais {
+    display: block;
+    width: 100%;
+  }
 }
-@media screen and (max-width: 923px){
-    div.footer{
-        display: block;
-        width: 100%;
-    }
-    footer menu{
-        display: none;
-    }
-    footer div.direitos_autorais{
-        width: 100%
-    }
-    footer div.direitos_autorais h2{
-        text-align: center;
-    }
+@media screen and (max-width: 923px) {
+  div.footer {
+    display: block;
+    width: 100%;
+  }
+  footer menu {
+    display: none;
+  }
+  footer div.direitos_autorais {
+    width: 100%;
+  }
+  footer div.direitos_autorais h2 {
+    text-align: center;
+  }
 }
-@media screen and (max-width: 820px){
-    .sessao2_veiculos_destaque .galeria_carros{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
-        min-height: 400px;
-        height: 100%;
-    }
-    .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .informacoes_carro{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 820px) {
+  .sessao2_veiculos_destaque .galeria_carros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sessao2_veiculos_destaque
+    .galeria_carros
+    .container_informacoes_carro
+    .foto_carro {
+    min-height: 400px;
+    height: 100%;
+  }
+  .sessao2_veiculos_destaque
+    .galeria_carros
+    .container_informacoes_carro
+    .informacoes_carro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-@media screen and (max-width: 758px){
-    .sessao1_banner .container_opcoes_empresa{
-        position: absolute;
-        top: 0;
-    }
-    .form form{
-        width: 100%;
-        padding: 0 2%;
-    }
-    header{
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    header nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    header nav ul li{
-        margin: 0.5rem 1%;
-        padding: 0 20px;
-        text-align: center;
-    }
-    header .car_logo{
-        width: 100%;
-        margin-left: 0;
-    }
+@media screen and (max-width: 758px) {
+  .sessao1_banner .container_opcoes_empresa {
+    position: absolute;
+    top: 0;
+  }
+  .form form {
+    width: 100%;
+    padding: 0 2%;
+  }
+  header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  header nav ul li {
+    margin: 0.5rem 1%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  header .car_logo {
+    width: 100%;
+    margin-left: 0;
+  }
 }
-@media  screen and (max-width: 578px){
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .seta_direita, .seta_esquerda {
-        display: none;
-    }
-    .sessao3_depoimentos_servicos .container_depoimentos_servicos .depoimentos .setas .nome_pessoa_depoimento{
-        display: block;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 578px) {
+  .sessao3_depoimentos_servicos .container_depoimentos_servicos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sessao3_depoimentos_servicos
+    .container_depoimentos_servicos
+    .depoimentos
+    .setas
+    .seta_direita,
+  .seta_esquerda {
+    display: none;
+  }
+  .sessao3_depoimentos_servicos
+    .container_depoimentos_servicos
+    .depoimentos
+    .setas
+    .nome_pessoa_depoimento {
+    display: block;
+    margin: 0 auto;
+  }
 }
-@media screen and (max-width: 485px){
-    .sessao2_veiculos_destaque .galeria_carros .container_informacoes_carro .foto_carro{
-        background-size: contain;
-        min-height: 250px;
-        height: 100%;
-        max-width: 500px;
-    }
-}
-@media screen and (max-width: 450px){
-    .sessao1_banner .container_opcoes_empresa{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0 2%;
-    }
-    .sessao1_banner .container_opcoes_empresa .consultoria{
-        width: 255px;
-        margin: 3% 3%;
-    }
-    .sessao1_banner .container_opcoes_empresa .compra{
-        margin: 3% 1%;
-    }
-    .sessao1_banner .container_opcoes_empresa .venda{
-        margin: 3% 1%;
-    }
-    .sessao1_banner .container_opcoes_empresa .email{
-        width: 300px;
-        margin: 3% 0;
-        padding: 3% 3%;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    header nav ul{
-        width: 100%;
-        display: none;
-        background-color: #693838;
-    }
-    header nav ul li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        border-bottom: 2px solid #605959;
-    }
-    header nav ul li a{
-        color: white;
-    }
-    header div.icone_menu_mobile{
-        display: inline-block;
-    }
-    .icone_menu_mobile{
-        margin-top: 1rem;
-    }
+@media screen and (max-width: 490px) {
+  .sessao2_veiculos_destaque
+    .galeria_carros
+    .container_informacoes_carro
+    .foto_carro {
+    background-size: contain;
+    min-height: 250px;
+    height: 100%;
+    max-width: 500px;
+  }
+  .sessao1_banner .container_opcoes_empresa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 5%;
+    border: 1px solid white;
+  }
+  .sessao1_banner .container_opcoes_empresa .consultoria {
+    top: 0;
+    left: 0;
+    width: 314px;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    left: -55px;
+    transform: skew(8deg);
+  }
+  .sessao1_banner .container_opcoes_empresa .compra {
+    top: 0;
+    left: 0;
+    width: 314px;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    left: -55px;
+    transform: skew(8deg);
+  }
+  .sessao1_banner .container_opcoes_empresa .venda {
+    top: 0;
+    left: 0;
+    width: 314px;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    left: -55px;
+    transform: skew(8deg);
+  }
+  .sessao1_banner .container_opcoes_empresa .email {
+    top: 0;
+    left: 0;
+    width: 314px;
+    text-align: center;
+    position: relative;
+    line-height: -60px;
+    left: -55px;
+    transform: skew(8deg);
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav ul {
+    width: 100%;
+    display: none;
+    background-color: #693838;
+  }
+  header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #605959;
+  }
+  header nav ul li a {
+    color: white;
+  }
+  header div.icone_menu_mobile {
+    display: inline-block;
+  }
+  .icone_menu_mobile {
+    margin-top: 1rem;
+  }
 }
